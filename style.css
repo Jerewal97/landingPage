@@ -1,0 +1,40 @@
+:root {
+    --cream: ##f9f6ec;
+    --grey: #ffffffd6;
+    --black-olive: #32322cff;
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--roboto); 
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #d9d7d7;
+}
+
+.navBar {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 10rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    gap: 3rem;
+    text-shadow: 5px 5px 5px #aaa;
+    font-size: 1.2rem;
+}
+
+
