@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
 :root {
-    --cream: ##f9f6ec;
-    --grey: #ffffffd6;
+    /* Backgrounds */
+    --bg-bd: #d5d5d5;
+    --bg-wh: #ffffff;
+    --bg-gy: #9b9b9d;
+
+
+    /* Textos */
+    --text-gy: #48485e;
+    --text-wh: #f3f4f6;
+
+    /* Decoration */
+    --fire: #ff6d00;
     --black-olive: #32322cff;
+
+    /* Font Family */
     --roboto: 'Roboto', sans-serif;
 }
 
@@ -9,32 +25,203 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--roboto);
 }
 
 body {
-    font-family: var(--roboto); 
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #d9d7d7;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #fff;
 }
 
-.navBar {
-    background-color: white;
+
+/* Section for Header */
+
+header {
+    background: linear-gradient(90deg, #fff, #9f9f9f, #000);
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 2rem 10rem;
-    border: 2px solid #000;
+    padding: 20px;
+    height: 9rem;
+}
+
+header img {
+    height: 90px;
+}
+
+.navbar, 
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.navbar {
+    display: flex;
+}
+  
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list li a {
+    color: var(--text-wh);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+} 
+
+.navbar-list li a:hover {
+    background-color: #0074D9;
+    color: #fff;
+    padding: 5px;
     border-radius: 5px;
 }
 
-ul {
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    gap: 3rem;
-    text-shadow: 5px 5px 5px #aaa;
-    font-size: 1.2rem;
+main {
+    background: linear-gradient(to bottom, #f2f2f2, #fff);
 }
 
+/* Section for Hero */
 
+#hero {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-slogan {
+    flex-basis: 50%;
+}
+  
+.hero-slogan h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+  
+.hero-slogan p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+  
+.hero-btn {
+    margin-top: 30px;
+}
+  
+.hero-btn a {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.hero-btn a:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 2px 0 #000;
+}
+  
+.hero-logo {
+    flex-basis: 40%;
+}
+  
+.hero-logo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Section for About */
+
+#about {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+  
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.about-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+  
+.about-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666666;
+}
+  
+
+/* Section for Footer */
+
+footer {
+    background-color: #292929;
+    color: #fff;
+    padding: 50px 0;
+}
+  
+.footer-container {
+    max-width: 1200px;
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-logo img {
+    max-width: 150px;
+    height: 60px;
+}
+  
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.footer-links li {
+    margin-right: 50px;
+}
+  
+.footer-links li:last-child {
+    margin-right: 0;
+}
+  
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+  
+.footer-links a:hover {
+    box-shadow: 0 2px var(--fire);
+}
