@@ -378,6 +378,20 @@ footer {
 }
 
 @media (max-width: 576px) {
+    .hero-btn {
+        width: 500px;
+    }
+
+    .hero-logo {
+        display: none;
+    }
+
+    .about-container p {
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+    }
+
     .footer-container p {
         font-size: 15px;
         text-align: center;
