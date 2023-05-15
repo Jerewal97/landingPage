@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Jeremias Walter</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="assets/icon.png" alt="Header icon for reference">
+        <img src="assets/icon.png" alt="Header icon for reference" class="header-icon">
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/icon-burg.png" alt="menu" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle" /> 
             <ul class="navbar-list">
                 <li><a href="#">home</a></li>
                 <li><a href="#">services</a></li>
                 <li><a href="#">about us</a></li>
                 <li><a href="#">contact</a></li>
-            </ul>
+            </ul>   
         </nav>
     </header>
+
 
     <main>
         <section id="hero">
             <div class="hero-slogan">
-                <h1>Welcome to our IT Services Company</h1>
+                <h1>Bienvenido a JW Tech Solutions</h1>
                 <p>
-                    We provide top-notch IT solutions for all your business needs!
+                    Proveemos soluciones a tus inconvenientes aportando lo último del mercado en Tech!
                 </p>
                 <div class="hero-btn">
-                    <a href="#">Contact</a>
-                    <a href="#">About Us</a>
+                    <a href="#">Conocenos más</a>
+                    <a href="#">Contactanos</a>
                 </div>
             </div>
             <div class="hero-logo">
@@ -38,22 +44,58 @@
         </section>
 
         <section id="about">
+            <h2>Conocenos</h2>
             <div class="about-container">
-              <h2>About Us</h2>
-              <p>We are a team of experienced IT professionals dedicated to providing high-quality services to our clients.</p>
-              <p>Our goal is to help businesses achieve success through the use of technology.</p>
-              <p>We believe that technology should be accessible to everyone, and we strive to make it easy and simple for our clients.</p>
-              <p>If you have any questions or would like to learn more about our services, please don't hesitate to contact us.</p>
+              <p>Conocemos la soluciones más apropiadas a las distintas necesidades de nuestros clientes. Comprendemos el negocio, y contamos con un equipo totalmente calificado y motivado por demostrar su capacidad para alcanzar el éxito en el mundo IT.</p>
             </div>
-        </section> 
+        </section>
+        
+        <section id="card">
+            <h2>Beneficios</h2>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Conocimiento</h3>
+                    <p>Nuestro equipo dispone de profesionales totalmente capaces de afrontar cualquier petición</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Profesionalidad</h3>
+                    <p>Nuestro equipo está altamente capacitado en las últimas tecnologías.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-database"></i>
+                    <h3>Cloud Services</h3>
+                    <p>Transformación digital para tu negocio!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Direccion</h2>
+                    <a href="#">Av. de Moratalaz, 77, 28030 Madrid, España</a>
+                    <h2>Email</h2>
+                    <a href="#">info@jwtech.com</a>
+                    <h2>Telefono</h2>
+                    <a href="#">+34 234 56 89 50</a>
+                </div>
+                <div class="contact-map">
+                    <img src="./assets/contactmap.png" alt="Mapa">
+                </div>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-container">
-            <div class="footer-logo">
-              <img src="./assets/icon.png" alt="Logo de la compañía">
-            </div>
-            <p>&copy; 2023 JW Company. Todos los derechos reservados.</p>
+            <p>&copy; Todos los derechos reservados 2023-</p>
             <div class="footer-links">
               <ul>
                 <li><a href="#">Home</a></li>
